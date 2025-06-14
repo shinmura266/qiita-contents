@@ -60,6 +60,8 @@ spec:
 ```
 $ kubectl apply -f ingress.yaml
 ingress.networking.k8s.io/argocd-ingress configured
+$ echo $(minikube ip) argocd.hogehoge.com | sudo tee -a /etc/hosts
+192.168.49.2 argocd.hogehoge.com
 $ curl -I http://argocd.hogehoge.com
 HTTP/1.1 307 Temporary Redirect
 Date: Sat, 14 Jun 2025 05:50:43 GMT
@@ -88,7 +90,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: argocd.in.vl-style.com
+    - host: argocd.hogehoge.com
       http:
         paths:
           - path: /
