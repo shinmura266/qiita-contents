@@ -1,12 +1,12 @@
 ---
 title: ArgoCDをhttpでアクセスする
 tags:
-  - ArgoCD
   - kubernetes
   - ingress
+  - ArgoCD
 private: false
-updated_at: ''
-id: null
+updated_at: '2025-06-14T16:28:53+09:00'
+id: dca4b045f1d1be3c13a8
 organization_url_name: null
 slide: false
 ignorePublish: false
